@@ -1,4 +1,16 @@
 
-- Coupling/coupled: How closely tied together the infrastructure is for a frontend and backend. If a frontend and backend are deployed on the same server, they have to be deployed always at the same time in lockstep with each other.
+# Coupling
 
-- Decoupling/decoupled: The opposite. Now the frontend can deploy without the backend getting touched and vice versa. The frontend and the backend are two halves that come together to make a whole and only depend on each other where absolutely necessary. They can be used independently from one another.
+An app is made up of two parts: a frontend and backend. The level at which those two parts are attached to each other describes how "coupled" they are.
+
+Coupling is a concept, an adjective. There are various ways that apps can be "coupled":
+- Deployment: If the deployment of an app is highly coupled, they probably exist in the same pipelines and maybe even on the same servers. Situations can arise where the frontend and backend always have to be deployed and redeployed in lockstep with each other. We don't like this. (See Why Developers Care about Coupling)
+- Application Code: With poor modern practices, an app can end up with deep ties between its frontend and backend. This discussion gets really code-y really quickly, but, as a non-technical, all you need to know is that developers try to avoid this at all costs. As a matter of course, we build to avoid coupling.
+- There are other ways but the two above are the two biggest and most important.
+
+## Why Developers Care about Coupling 🧑‍🤝‍🧑
+
+There are a lot of reasons why developers hate coupling but I'll cite two main reasons for the point of this discussion:
+
+- A high degree of coupling can mean that my app is less prepared for change. If I have to make changes to the frontend, I suddenly also am forced to do stuff to the backend, too. I don't like this. Now I have twice the work! I want half the work, not twice the work! I'm a developer! I already have enough to deal with in my day!
+- Unnecessary work that doesn't do anything for my users. In programming, change means risk. I would rather have to redeploy one server instead of two. I would rather have to make one change on the frontend rather than two changes (one for both ends). If my app is decoupled, it's less risky to make changes to.
