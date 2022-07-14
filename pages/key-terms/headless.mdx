@@ -1,32 +1,41 @@
+import Link from 'next/link'
 
 # What Headless Means to Developers
 
-What some services do is that they start out as full stack.
+What some services will do is that they start out as <Link href="/key-terms/full-stack">full stack</Link>. But some devs don't want that service to be full stack. They only want half of it.
 
-Think of Wordpress. With a Wordpress site, you get a fully figured website that has a frontend and a backend. There is even an admin portal to make changes to your underlying data. That admin is using the Wordpress API to make changes in the data layer. Then, it will use another API endpoint (backend!) to pull that data when it needs it and show it to you on the frontend. Frontend **and** backend - all coming from one service (Wordpress).
+Think of Wordpress. With a Wordpress site, you get a fully figured website that has a frontend and a backend. There is even an admin portal to make changes to your underlying data.
 
-I want to be very clear here: **Only a full-stack service can advertise itself as going headless.**
+That admin is using the Wordpress API to make changes in the data layer. When it comes time to read that data, it will use another endpoint to pull that data from the database. Frontend **and** backend - all coming from one service (Wordpress).
 
-Remember, Wordpress has a backend. It has endpoints that I can use to manipulate and get data.
+I want to be very clear here: Only a full-stack service can **actually** go headless. (More on this in <Link href="#other-musings">Other Musings</Link>)
+
+Remember, Wordpress has a <Link href="/key-terms/backend">backend</Link>. It has endpoints that I can use to manipulate and get data.
 
 But I, fancy developer, am choosing for my app to not use the Wordpress frontend. Maybe I think it's ugly or difficult to work with. In fact, I'm going to use a NextJS frontend because I got that new hotness.
 
-**“Huh? Anthony, you told me Wordpress is full-stack. Why and how would you use a NextJS frontend?”**
+## “Huh? Anthony, you told me Wordpress is full-stack. How and why would you use a NextJS frontend?”
 
-Jump back up to our Key Terms. Focus on decoupling, especially the last part. “They can be used independently from one another.” What I've done is taken Wordpress and only used half of it. I’m going to use my Nextjs website and contact the Wordpress API.
+
+### How
+
+<Link href="/key-terms/coupling">Decoupling</Link> in action. What I've done is taken Wordpress and only used half of it. I'm going to use my Nextjs website and contact the Wordpress API when I need it.
 
 **That** is going headless. I'm using Wordpress headlessly, without its frontend. I brought my own frontend to the Wordpress API.
+
+
+### Why
 
 Why would I do that? Well, using the Wordpress API can save me A LOT of time writing an entire backend. As long as the Wordpress API fulfills my requirements (writing new data, shaping the data how I want, fetching the data how I want, etc.), I can skip rewriting everything that it does and just use it. Why do more work when less work do same trick?
 
 This is a decoupled architecture. As a matter of fact, I could write another frontend using Svelte that contacts the same Wordpress API and switch it out with my Nextjs one - never having to touch the backend. This sort of agility is why developers want decoupled architectures.
 
-# Other musings ✍️
+## Other musings
 
-- The word “headless” also has other meanings so you'll want to define that you are talking about architectural headless-ness if that's what you're selling. Headless is a programming concept that I could mentally apply to a couple other things. It would be like telling me that you want to sell me blue. I would say “A blue what?”
+- The word “headless” also has other meanings in different contexts. You'll want to define that you are talking about architectural headless-ness if that's what you're selling. Headless is a programming concept that I could mentally apply to a couple other things. It would be like telling me that you want to sell me blue. I would say “A blue what?”
 - You can have a headless backend but you can't have a headless frontend. The frontend **is** the head.
 - Shopify is a great case for headless use. It's insanely hard to write an e-commerce app from scratch. Shopify does a good job of having all of the backend work done for me so I can make a cutesy frontend for people to visit. As a developer, now I have half the work to do.
 - You may see some services that are actually just backends advertise themselves as “headless.” This isn't actually what headless means. It's just a marketing buzzword. (Sorry, Marketing.)
-    - It is an API, though, and perhaps useful. A backend service, by definition. You need a head (frontend) to go headless (front endless) and the services that I'm talking about here never had one in the first place.
-    - Contentful is a **super** guilty party here. They sell an API that manages content. They don't sell frontends. I can't use Contentful as a full-stack app - so I can't use it headlessly.
-- Where Nextjs comes into the equation is that it **is** the head for your headless approach.
+  - It is an API, though, and perhaps useful. A backend service, by definition. You need a head (frontend) to go headless (frontendless) and the services that I'm talking about here never had one in the first place.
+  - Contentful is a **super** guilty party here. They sell an API that manages content. They don't sell frontends. I can't use Contentful as a full-stack app - so I can't use it headlessly.
+- Where Nextjs (or Vercel) comes into the equation is that it **is** the head for your headless approach.

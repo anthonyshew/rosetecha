@@ -4,7 +4,7 @@ export default {
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">
-        The Rosetecha Stone
+        ▲ The Rosetecha Stone
       </span>
       <span className="text-gray-600 font-normal hidden md:inline">
         Tech for Non-Technicals
@@ -79,5 +79,4 @@ export default {
   footer: true,
   footerEditLink: 'Edit this page on GitHub',
   footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
-  unstable_faviconGlyph: '👋',
 }

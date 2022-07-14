@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 # Turborepo
 
 Turborepo is a monorepo manager for building JavaScript and TypeScript projects. Turborepo allows a developer to make many different applications using shared code (called packages).
@@ -6,7 +8,7 @@ Turborepo is a monorepo manager for building JavaScript and TypeScript projects.
 
 Alright, let me try that again.
 
-If you don't know what a monorepo is yet, go check the definition for that one first.
+If you don't know what a <Link href='/key-terms/monorepo'>monorepo</Link> is yet, go check <Link href="/key-terms/monorepo">the definition</Link> for that one first.
 
 🎶 _elevator music_ 🎶
 
@@ -18,15 +20,19 @@ However, once there starts being a ton of code, it becomes really difficult to k
 
 ## Here comes Turborepo
 
-This is where Turborepo comes in. Turborepo takes all of the pieces and parts of the codebase and pastes them together so that you can have a workflow that you don't have to worry about. This applies to while the app is being developed, built, and ran. Here, Turborepo is making it significantly easiser to work in a monorepo.
+This is where Turborepo comes in. Turborepo takes all of the pieces and parts of the codebase and pastes them together so that you can have a workflow that you don't have to worry about. This is useful during all three big stages of making an app happen: developing, building, and running.
 
 ## More Advanced Features of Turborepo
 
-There are many more advanced functions of Turborepo but the big one is "remote caching."
+There are many more advanced functions of Turborepo a big one for the non-technicals to know is "remote caching."
 
-Let's break that down:
+Let's break that word down:
 
 - Remote: Somewhere else other than where we are right now.
 - Caching: Saving things for later.
 
-What remote caching does is speeds up workflows all over the place. Turborepo has a bunch of juice packed into it that allows it to report to a caching server in the cloud where it will remember what builds look like. The first time that it sees a certain build happen, it will go ahead and do that build process. However, the second time it sees that same build happening, it will stop the building process and grab the "old" one that already exists. So, instead of me having to wait for the build process to happen again for the exact same build, I'm going to have it instantly!
+What remote caching does is speeds up workflows - everywhere.
+
+Turborepo has a bunch of juice packed into it that allows it to report to a caching server in the cloud where it will remember what builds look like. The first time that it sees a certain build happen, it will go ahead and do that build process. However, the second time it sees that same build happening, it will stop the building process and grab the "old" one that already exists.
+
+It's the same code. Why wait for it to build again? So, instead of me having to wait for the build process to happen again for the exact same build, I'm going to have it instantly!

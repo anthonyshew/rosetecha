@@ -1,16 +1,18 @@
+import Link from 'next/link'
 
 # Coupling
 
-An app is made up of two parts: a frontend and backend. The level at which those two parts are attached to each other describes how "coupled" they are.
+An app is made up of two parts: a <Link href="/key-terms/frontend">frontend</Link> and <Link href="/key-terms/backend">backend</Link>. The level at which those two parts are attached and dependent on each other describes how "coupled" they are.
 
-Coupling is a concept, an adjective. There are various ways that apps can be "coupled":
-- Deployment: If the deployment of an app is highly coupled, they probably exist in the same pipelines and maybe even on the same servers. Situations can arise where the frontend and backend always have to be deployed and redeployed in lockstep with each other. We don't like this. (See Why Developers Care about Coupling)
-- Application Code: With poor modern practices, an app can end up with deep ties between its frontend and backend. This discussion gets really code-y really quickly, but, as a non-technical, all you need to know is that developers try to avoid this at all costs. As a matter of course, we build to avoid coupling.
-- There are other ways but the two above are the two biggest and most important.
+Coupling is a concept, an adjective. There are various ways that apps can end up "highly coupled":
 
-## Why Developers Care about Coupling 🧑‍🤝‍🧑
+- Deployment: If the deployment of an app is highly coupled, they probably exist in the same pipelines and maybe even on the same servers. Situations can arise where the frontend and backend always have to be deployed and redeployed in lockstep with each other. We don't like this. (See <Link href="#why-developers-care-about-coupling">Why Developers Care about Coupling</Link>)
+- Application Code: With poor practices, an app can end up with deep ties between its frontend and backend. This discussion gets really code-y really quickly, but, as a non-technical, all you need to know is that developers try to avoid this at all costs. As a matter of course, we build to avoid coupling.
+- There are other ways but the two above are the two biggest and most important that you're probably going to care about.
+
+## Why Developers Care about Coupling
 
 There are a lot of reasons why developers hate coupling but I'll cite two main reasons for the point of this discussion:
 
-- A high degree of coupling can mean that my app is less prepared for change. If I have to make changes to the frontend, I suddenly also am forced to do stuff to the backend, too. I don't like this. Now I have twice the work! I want half the work, not twice the work! I'm a developer! I already have enough to deal with in my day!
+- A high degree of coupling can mean that my app is less prepared for change. If I have to make changes to the frontend, I suddenly am also forced to do stuff to the backend, too. I don't like this. Now I have twice the work! I want half the work, not twice the work! I'm a developer! I already have enough to deal with in my day!
 - Unnecessary work that doesn't do anything for my users. In programming, change means risk. I would rather have to redeploy one server instead of two. I would rather have to make one change on the frontend rather than two changes (one for both ends). If my app is decoupled, it's less risky to make changes to.
