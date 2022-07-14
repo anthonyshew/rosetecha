@@ -1,8 +1,9 @@
+import { KeyTermLink } from '../../components/key-term-link.tsx'
 import Link from 'next/link'
 
 # What Headless Means to Developers
 
-What some services will do is that they start out as <Link href="/key-terms/full-stack">full stack</Link>. But some devs don't want that service to be full stack. They only want half of it.
+What some services will do is that they start out as <KeyTermLink termUrl="full-stack">full stack</KeyTermLink>. But some devs don't want that service to be full stack. They only want half of it.
 
 Think of Wordpress. With a Wordpress site, you get a fully figured website that has a frontend and a backend. There is even an admin portal to make changes to your underlying data.
 
@@ -10,19 +11,19 @@ That admin is using the Wordpress API to make changes in the data layer. When it
 
 I want to be very clear here: Only a full-stack service can **actually** go headless. (More on this in <Link href="#other-musings">Other Musings</Link>)
 
-Remember, Wordpress has a <Link href="/key-terms/backend">backend</Link>. It has endpoints that I can use to manipulate and get data.
+Remember, Wordpress has a <KeyTermLink termUrl="backend">backend</KeyTermLink>. It has endpoints that I can use to manipulate and get data.
 
 But I, fancy developer, am choosing for my app to not use the Wordpress frontend. Maybe I think it's ugly or difficult to work with. In fact, I'm going to use a NextJS frontend because I got that new hotness.
 
 ## “Huh? Anthony, you told me Wordpress is full-stack. How and why would you use a NextJS frontend?”
 
-
 ### How
 
-<Link href="/key-terms/coupling">Decoupling</Link> in action. What I've done is taken Wordpress and only used half of it. I'm going to use my Nextjs website and contact the Wordpress API when I need it.
+<KeyTermLink termUrl="coupling">Coupling</KeyTermLink> in action. What I've done
+is taken Wordpress and only used half of it. I'm going to use my Nextjs website and
+contact the Wordpress API when I need it.
 
 **That** is going headless. I'm using Wordpress headlessly, without its frontend. I brought my own frontend to the Wordpress API.
-
 
 ### Why
 

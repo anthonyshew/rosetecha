@@ -1,0 +1,22 @@
+import { KeyTermLink } from '../../components/key-term-link.tsx'
+import Link from 'next/link'
+
+# Endpoint
+
+An endpoint is a route to an HTTP resource that will respond with some data.
+
+## Pardon?
+
+Yeah, I know. Let me go again.
+
+Your app is made up of two things: <KeyTermLink termUrl="frontend">frontend</KeyTermLink> and <KeyTermLink termUrl="backend">backend</KeyTermLink>.
+
+The frontend needs to be able to talk to the backend somehow. What the backend will have available for the backend is a bunch of these things called "endpoints."
+
+In the same way that you get a website when you visit `vercel.com`, there are URLs that you can visit that will give you back ugly stuff like [this](https://dog.ceo/api/breeds/list/all).
+
+While that isn't pretty to you as a user, that's a goldmine for a developer. I can use that in my app very nicely. That endpoint is actually listing dog breeds in a format that is really convenient to use while I program.
+
+## The Punchline
+
+That URL that you just visited is an `endpoint`. That `endpoint` just responded with some data that I can use in my app. The rest of the dog API has other `endpoints` that are also useful for doing different stuff within the app. There may be `endpoints` for updating a certain dog breed name, getting the data on a certain breed, or adding a new breed to the list.
