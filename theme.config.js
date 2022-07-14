@@ -1,6 +1,6 @@
 export default {
-  github: 'https://github.com/anthony-shew/vercel-dictionary',
-  titleSuffix: ' – The Rosetecha Stone',
+  github: 'https://github.com/anthonyshew/rosetecha',
+  titleSuffix: ' - The Rosetecha Stone',
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">
@@ -17,15 +17,30 @@ export default {
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
-      <meta name="description" content="The Rosetecha Stone: Tech for Non-Technicals" />
-      <meta name="og:description" content="The Rosetecha Stone: Tech for Non-Technicals" />
+      <meta
+        name="description"
+        content="The Rosetecha Stone: Tech for Non-Technicals"
+      />
+      <meta
+        name="og:description"
+        content="The Rosetecha Stone: Tech for Non-Technicals"
+      />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content="https://nextra.vercel.app/og.png" />
-      <meta name="twitter:site:domain" content="nextra.vercel.app" />
-      <meta name="twitter:url" content="https://nextra.vercel.app" />
-      <meta name="og:title" content="The Rosetecha Stone: Tech for Non-Technicals" />
-      <meta name="og:image" content="https://nextra.vercel.app/og.png" />
-      <meta name="apple-mobile-web-app-title" content="Nextra" />
+      <meta
+        name="twitter:image"
+        content="https://rosetecha-stone.vercel.app/og.png"
+      />
+      <meta name="twitter:site:domain" content="rosetecha-stone.vercel.app" />
+      <meta name="twitter:url" content="https://rosetecha-stone.vercel.app" />
+      <meta
+        name="og:title"
+        content="The Rosetecha Stone: Tech for Non-Technicals"
+      />
+      <meta
+        name="og:image"
+        content="https://rosetecha-stone.vercel.app/og.png"
+      />
+      <meta name="apple-mobile-web-app-title" content="The Rosetecha Stone" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -59,8 +74,8 @@ export default {
     </>
   ),
   search: true,
-  prevLinks: true,
-  nextLinks: true,
+  // prevLinks: true,
+  // nextLinks: true,
   footer: true,
   footerEditLink: 'Edit this page on GitHub',
   footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
