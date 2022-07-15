@@ -1,0 +1,19 @@
+import {KeyTermLink} from '../../components/KeyTermLink.tsx'
+
+# Multirepo
+
+Code being kept in many different <KeyTermLink termURL="repository">repositories</KeyTermLink> to keep it in smaller, more manageable chunks. This is called a `multirepo`.
+
+## Why?
+
+As a company grows, its needs change. More staff needs to get hired, more features and products need to get built, and, because of this, there is more code.
+
+In these large companies, there can end up being so much code that it becomes really difficult to keep it all in one repository. Things start to perform poorly because *there's just too much darn code*. Builds, pipelines, and <KeyTermLink termUrl="version-control">version control</KeyTermLink> can all start to suffer from the sheer mass of code.
+
+For that reason, a team may want to break up their codebase into many, smaller codebases for ease of management. They just leveraged a `multirepo`.
+
+## Why not?
+
+The alternative to a `multirepo` is a <KeyTermLink termUrl="monorepo">monorepo</KeyTermLink>. For smaller teams and companies that don't have a gigantic codebase, it can be much easier to have just one codebase to use and look at.
+
+However, a monorepo can also be used by larger teams, too. This choice carries huge implications with it and is not taken lightly by programmers, teams, or companies.

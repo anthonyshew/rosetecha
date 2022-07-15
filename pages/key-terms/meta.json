@@ -1,3 +1,16 @@
 {
-  "index": "What's in here?"
+  "index": "What's in here?",
+  "api": "API",
+  "backend": "Backend",
+  "cdn": "CDN",
+  "coupling": "Coupling",
+  "endpoint": "Endpoint",
+  "frontend": "Frontend",
+  "full-stack": "Full Stack",
+  "headless": "Headless",
+  "monorepo": "Monorepo",
+  "multirepo": "Multirepo",
+  "repository": "Repository",
+  "turborepo": "Turborepo",
+  "version-control": "Version Control"
 }
