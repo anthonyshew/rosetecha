@@ -12,6 +12,7 @@
   "monorepo": "Monorepo",
   "multirepo": "Multirepo",
   "repository": "Repository",
+  "rest": "REST",
   "turborepo": "Turborepo",
   "version-control": "Version Control"
 }

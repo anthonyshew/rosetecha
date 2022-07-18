@@ -1,0 +1,34 @@
+import Link from 'next/link'
+import { KeyTermLink } from '../../components/KeyTermLink.tsx'
+
+# REST
+
+This is when a developer takes a break.
+
+Just kidding. _(Anthony, you're not funny.)_ Yeah, I know. _(Anthony, definition, please)_. Yeah, okay.
+
+`REST` stands for "REpresentational State Transfer" - and, yes, they cheated on their acronym.
+
+REST is an architectural style for describing how an API is going to work. There are several <Link href="#important-characteristics">important characteristics</Link> that make a RESTful architecture desirable for developers.
+
+## Why Developers love REST
+
+Simply put, developers like RESTful architectures because it makes an API predictable and friendly.
+
+Today, REST is an extremely common pattern so developers can move quickly with a RESTful API. They generally know what to expect when they use a certain method with a certain endpoint - and they like that. If the API for them is simple and familiar, they can go back to focusing on their application's logic.
+
+## Important Characteristics
+
+So you want some specifics? There are some pretty particular characteristics that a REST api needs to have:
+
+1. Uniform Interface
+
+  In a RESTful API, resources are uniquely and descriptively named. If an <KeyTermLink termUrl="endpoint">endpoint</KeyTermLink> is named `v2/dogs`, we expect to use the second version of the API to do something with dogs. Additionally, this idea works when comparing routes and resources to each other. All of the `POST` routes for the API should **post** information. If you randomly run into a `POST` that deletes data, that would be a problem.
+
+2. Stateless
+
+  The response from the server must contain everything needed to understand and finish off the request. This has a lot of implications but the main one is that the server cannot use any stored information to complete the request (AKA no state).
+
+3. There are more.
+
+  There are still way more than this but they're outside of the scope of what we are trying to do here. There is a ton of content out there about REST and how it works so hit a quick Google now that you have a nice, basic understanding.
