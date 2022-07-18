@@ -1,0 +1,21 @@
+# HTTP
+
+HTTP stands for Hypertext Transfer Protocol.
+
+This is a set of rules for everything on the internet to speak so that everyone is "speaking the same language."
+
+By establishing this standard, servers can communicate with each other in a sensible and expected manner.
+
+## Some nitty gritty
+
+A network request that is communicating using HTTP is made of a couple important parts:
+
+- HTTP version:  There are several versions of HTTP that differ in various ways. It is important for both the requesting and responding party to know which version of the protocol to use.
+- A URL: Where we goin'?! This lets the internet know where to go to find what you are looking for.
+- An HTTP method: There are different "actions" you can perform when you make an HTTP request.
+  - `GET`: This is for when you want to retrieve something.
+  - `POST`: This is to save some new information somewhere. You're "posting" it - like tweet on Twitter!
+  - `DELETE`: This is to remove something from the resource you've requested. Delete my tweet!
+  - There are many others but these are a couple of the simplest for our explanation.
+- Headers: These are pieces of data that describe the request that is being made. For example, you may find a header for `authorization` that contains a token to tell the server **who** made this request.
+- HTTP body: This is the part of the request that actually contains data. If you this request is a `POST`, for example, the body is going to contain the information that we want to post.

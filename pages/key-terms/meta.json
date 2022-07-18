@@ -8,6 +8,7 @@
   "frontend": "Frontend",
   "full-stack": "Full Stack",
   "headless": "Headless",
+  "http": "HTTP",
   "monorepo": "Monorepo",
   "multirepo": "Multirepo",
   "repository": "Repository",
