@@ -12,6 +12,7 @@
   "http": "HTTP",
   "monorepo": "Monorepo",
   "multirepo": "Multirepo",
+  "nextjs": "Next.js",
   "render": "Render",
   "repository": "Repository",
   "rest": "REST",
