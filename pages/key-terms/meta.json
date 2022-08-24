@@ -3,6 +3,7 @@
   "api": "API",
   "backend": "Backend",
   "cdn": "CDN",
+  "configuration": "Configuration",
   "coupling": "Coupling",
   "endpoint": "Endpoint",
   "frontend": "Frontend",
