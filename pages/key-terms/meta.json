@@ -13,6 +13,7 @@
   "monorepo": "Monorepo",
   "multirepo": "Multirepo",
   "nextjs": "Next.js",
+  "react": "React",
   "render": "Render",
   "repository": "Repository",
   "rest": "REST",
