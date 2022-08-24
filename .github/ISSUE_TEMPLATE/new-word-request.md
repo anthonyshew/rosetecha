@@ -13,6 +13,7 @@ assignees: anthonyshew
 - [ ] Engineering
 - [ ] Product
 - [ ] Finance
+- [ ] Design
 - [ ] Something else or want to be more specific (let me know below)
 
 ### Anything else @anthonyshew should know?
