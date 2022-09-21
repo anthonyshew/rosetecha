@@ -4,6 +4,7 @@
   "api": "API",
   "apm": "Application Performance Monitoring",
   "backend": "Backend",
+  "ci-cd": "CI/CD",
   "cdn": "CDN",
   "configuration": "Configuration",
   "coupling": "Coupling",
